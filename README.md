@@ -12,7 +12,7 @@ Student Project for pratice<br/>
 <br>
 
 <p align="center">
-  <img alt="projeto First-Forms" src="./assets/preview.png" width="100%">
+  <img alt="projeto First-Forms" src="./assets/PREVIEW.png" width="100%">
 </p>
 
 ## 🚀 Technologies
