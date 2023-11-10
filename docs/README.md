@@ -27,6 +27,6 @@ This project was developed with the following technologies
 
 Studant project used for practice my new knowledge in SASS and JavaScript.
 
-- [Access the finalized project online](https://maykbrito.github.io/devlinks)
+- [Access the finalized project online](https://MatheusAmorimm.github.io/first-forms)
 
 ---
