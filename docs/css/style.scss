@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@400;500;700;900&display=swap");
+
+@mixin success(){
+    input{
+        border-color: #2ecc71;
+    }
+
+    .fa-circle-check{
+        color: #2ecc71;
+        visibility: visible;
+    }
+
+}
+
+@mixin error(){
+    input{
+        border-color: #e74c3c;
+    }
+
+    .fa-circle-exclamation{
+        color: #e74c3c;
+        visibility: visible;
+    }
+
+    small{
+        visibility: visible;
+        color: #e74c3c;
+    }
+
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, rgb(168, 113, 206) 0%, #2f0244 100%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.699);
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+    margin: 0px 10px;
+}
+
+.header {
+    background: #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.form {
+    padding: 20px;
+}
+
+.formcontrol {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+
+    label {
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+
+    input {
+        border: 2px solid #f0f0f0;
+        display: block;
+        border-radius: 10px;
+        font-size: 14px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    i {
+        position: absolute;
+        top: 45px;
+        right: 10px;
+        visibility: hidden;
+    }
+
+    small {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        visibility: hidden;
+    }
+}
+
+.form {
+    button {
+        background: linear-gradient(90deg, rgb(222, 82, 235) 0%, #a305ec 100%);
+        color: #f0f0f0;
+        border-radius: 10px;
+        border: none;
+        width: 100%;
+        padding: 12px;
+
+        &:hover {
+            opacity: 70%;
+            cursor: pointer;
+        }
+    }
+}
+
+.congratulations{
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.699);
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+    margin: 0px 10px;
+    padding: 20px;
+
+    .commendation{
+        font-size: 15px;
+        background: #eee;
+        padding: 15px;
+        text-align: center;
+        border-radius: 10px;
+
+        i{
+            color:#2ecc71;
+            font-size: 40px;
+            margin: 10px 10px 0px;
+        }
+    }
+
+    .mensagem{
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    button{
+            background: linear-gradient(90deg, rgb(222, 82, 235) 0%, #a305ec 100%);
+            color: #f0f0f0;
+            border-radius: 10px;
+            border: none;
+            width: 100%;
+            padding: 12px;
+    
+            &:hover {
+                opacity: 70%;
+                cursor: pointer;
+            }
+    }
+
+}
+
+
+.success{
+    @include success();
+}
+
+.error{
+    @include error();
+}
+
+.hiden{
+    display: none;
+}
